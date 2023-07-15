@@ -37,7 +37,7 @@ img {
     gap: 5px;
 }
 
-/* Responsive Media Query Start here  */
+/*Small Device Responsive Media Query Start here  */
 @media screen and (max-width:576px) {
     .row {
         height: auto;
@@ -56,5 +56,13 @@ img {
     }
     .images:last-child{
         margin-top: 5px;
+    }
+}
+
+/* Medium Device Responsive Media query Start Here  */
+@media screen and (min-width: 577px) and (max-width: 992px){
+    .row{
+        flex-direction: column;
+        height: auto;
     }
 }
