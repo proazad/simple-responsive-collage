@@ -23,8 +23,7 @@ img {
 }
 
 .images {
-    /* width: 100%; */
-    height: inherit;
+    height: auto;
     flex: 1;
 }
 
@@ -36,4 +35,26 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
+}
+
+/* Responsive Media Query Start here  */
+@media screen and (max-width:576px) {
+    .row {
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 0px;
+        gap: 0px;
+    }
+    .vertical-collage img {
+        height: 100%;
+    }
+    .grid-collage {
+        grid-template-columns: 1fr;
+    }
+    header h1{
+        font-size: 20px;
+    }
+    .images:last-child{
+        margin-top: 5px;
+    }
 }
